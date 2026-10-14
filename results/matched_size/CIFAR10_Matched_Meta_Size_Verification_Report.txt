@@ -1,0 +1,25 @@
+CIFAR-10 Matched Meta-Training Size Experiment
+
+Verification status: Bootstrap calculations reproduced.
+Validated interval comparisons: 10
+Meta-training sizes with five runs: 1000, 2000, 4000, 6000, 8000
+Meta-training size with one run: 10000
+
+Interpretation:
+Fixed holdout had higher observed mean accuracy in all reported comparisons.
+Bootstrap intervals describe variability across selected subsets in this experiment.
+They should not be interpreted as definitive confidence intervals for a general
+protocol effect. The two protocols use different meta-training pools, and the
+same test set was reused across comparisons.
+
+Mean accuracy gaps (percentage points):
+N=1000, LogisticRegression: 0.542 pp; exploratory interval [0.372, 0.712]
+N=1000, LightGBM: 0.250 pp; exploratory interval [0.084, 0.516]
+N=2000, LogisticRegression: 0.576 pp; exploratory interval [0.398, 0.784]
+N=2000, LightGBM: 0.298 pp; exploratory interval [0.086, 0.574]
+N=4000, LogisticRegression: 0.634 pp; exploratory interval [0.534, 0.736]
+N=4000, LightGBM: 0.398 pp; exploratory interval [0.224, 0.602]
+N=6000, LogisticRegression: 0.698 pp; exploratory interval [0.578, 0.818]
+N=6000, LightGBM: 0.312 pp; exploratory interval [0.154, 0.500]
+N=8000, LogisticRegression: 0.636 pp; exploratory interval [0.540, 0.746]
+N=8000, LightGBM: 0.416 pp; exploratory interval [0.230, 0.586]
